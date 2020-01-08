@@ -1,0 +1,142 @@
+[
+	{
+		"country": "Afghanistan",
+		"code": "AFG",
+		"calendarYear": false,
+		"fiscalStart": "12/21",
+		"fiscalEnd": "12/20"
+	},
+	{
+		"country": "Albania",
+		"code": "ALB",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Algeria",
+		"code": "DZA",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "American Samoa",
+		"code": "ASM",
+		"calendarYear": false,
+		"fiscalStart": "10/01",
+		"fiscalEnd": "09/31"
+	},
+	{
+		"country": "Andorra",
+		"code": "AND",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Anguilla",
+		"code": "AIA",
+		"calendarYear": false,
+		"fiscalStart": "04/01",
+		"fiscalEnd": "03/31"
+	},
+	{
+		"country": "Antigua and Barbuda",
+		"code": "ATG",
+		"calendarYear": false,
+		"fiscalStart": "04/01",
+		"fiscalEnd": "03/31"
+	},
+	{
+		"country": "Argentina",
+		"code": "ARG",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Armenia",
+		"code": "ARM",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Aruba",
+		"code": "ABW",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Australia",
+		"code": "AUS",
+		"calendarYear": false,
+		"fiscalStart": "07/01",
+		"fiscalEnd": "06/30"
+	},
+	{
+		"country": "Austria",
+		"code": "AUT",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Azerbaijan",
+		"code": "AZE",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Bahamas, The",
+		"code": "BHS",
+		"calendarYear": false,
+		"fiscalStart": "07/01",
+		"fiscalEnd": "06/30"
+	},
+	{
+		"country": "Bahrain",
+		"code": "BHR",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Bangladesh",
+		"code": "BGD",
+		"calendarYear": false,
+		"fiscalStart": "07/01",
+		"fiscalEnd": "06/30"
+	},
+	{
+		"country": "Barbados",
+		"code": "BRB",
+		"calendarYear": false,
+		"fiscalStart": "04/01",
+		"fiscalEnd": "03/31"
+	},
+	{
+		"country": "Belarus",
+		"code": "BLR",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Belgium",
+		"code": "BEL",
+		"calendarYear": true,
+		"fiscalStart": null,
+		"fiscalEnd": null
+	},
+	{
+		"country": "Belize",
+		"code": "BLZ",
+		"calendarYear": false,
+		"fiscalStart": "04/01",
+		"fiscalEnd": "03/31"
+	}
+]
