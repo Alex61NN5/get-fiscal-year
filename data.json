@@ -1,1547 +1,1539 @@
-[
-	{
+[{
 		"country": "Afghanistan",
-		"code": "AFG",
+		"code": "AF",
 		"calendarYear": false,
 		"fiscalStart": "12/21",
 		"fiscalEnd": "12/20"
 	},
 	{
 		"country": "Albania",
-		"code": "ALB",
+		"code": "AL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Algeria",
-		"code": "DZA",
+		"code": "DZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "American Samoa",
-		"code": "ASM",
+		"code": "AS",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Andorra",
-		"code": "AND",
+		"code": "AD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Anguilla",
-		"code": "AIA",
+		"code": "AI",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Antigua and Barbuda",
-		"code": "ATG",
+		"code": "AG",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Argentina",
-		"code": "ARG",
+		"code": "AR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Armenia",
-		"code": "ARM",
+		"code": "AM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Aruba",
-		"code": "ABW",
+		"code": "AW",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Australia",
-		"code": "AUS",
+		"code": "AU",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Austria",
-		"code": "AUT",
+		"code": "AT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Azerbaijan",
-		"code": "AZE",
+		"code": "AZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Bahamas, The",
-		"code": "BHS",
+		"code": "BS",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Bahrain",
-		"code": "BHR",
+		"code": "BH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Bangladesh",
-		"code": "BGD",
+		"code": "BD",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Barbados",
-		"code": "BRB",
+		"code": "BB",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Belarus",
-		"code": "BLR",
+		"code": "BY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Belgium",
-		"code": "BEL",
+		"code": "BE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Belize",
-		"code": "BLZ",
+		"code": "BZ",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Benin",
-		"code": "BEN",
+		"code": "BJ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Bermuda",
-		"code": "BMU",
+		"code": "BM",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Bhutan",
-		"code": "BTN",
+		"code": "BT",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Bolivia",
-		"code": "BOL",
+		"code": "BO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Bosnia and Herzegovina",
-		"code": "BIH",
+		"code": "BA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Botswana",
-		"code": "BWA",
+		"code": "BW",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Brazil",
-		"code": "BRA",
+		"code": "BR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "British Virgin Islands",
-		"code": "VGB",
+		"code": "VG",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Brunei",
-		"code": "BRN",
+		"code": "BN",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Bulgaria",
-		"code": "BGR",
+		"code": "BG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Burkina Faso",
-		"code": "BFA",
+		"code": "BF",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Burma",
-		"code": "MMR",
+		"code": "MM",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Burundi",
-		"code": "BDI",
+		"code": "BI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cabo Verde",
-		"code": "CPV",
+		"code": "CV",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cambodia",
-		"code": "KHM",
+		"code": "KH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cameroon",
-		"code": "CMR",
+		"code": "CM",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Canada",
-		"code": "CAN",
+		"code": "CA",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Cayman Islands",
-		"code": "CYM",
+		"code": "KY",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Central African Republic",
-		"code": "CAF",
+		"code": "CF",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Chad",
-		"code": "TCD",
+		"code": "TD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Chile",
-		"code": "TCD",
+		"code": "CL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "China",
-		"code": "CHN",
+		"code": "CN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Christmas Island",
-		"code": "CXR",
+		"code": "CX",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Cocos (Keeling) Islands",
-		"code": "CCK",
+		"code": "CC",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Colombia",
-		"code": "COL",
+		"code": "CO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Comoros",
-		"code": "COM",
+		"code": "KM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Congo, Democratic Republic of the",
-		"code": "COD",
+		"code": "CD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cook Islands",
-		"code": "COK",
+		"code": "CK",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Costa Rica",
-		"code": "CRI",
+		"code": "CR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cote d'Ivoire",
-		"code": "CIV",
+		"code": "CI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Croatia",
-		"code": "HRV",
+		"code": "HR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cuba",
-		"code": "CUB",
+		"code": "CU",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Cyprus",
-		"code": "CYP",
+		"code": "CY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Czechia",
-		"code": "CZE",
+		"code": "CZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Denmark",
-		"code": "DNK",
+		"code": "DK",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Djibouti",
-		"code": "DJI",
+		"code": "DJ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Dominica",
-		"code": "DMA",
+		"code": "DM",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Dominican Republic",
-		"code": "DOM",
+		"code": "DO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Ecuador",
-		"code": "ECU",
+		"code": "EC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Egypt",
-		"code": "EGY",
+		"code": "EG",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "El Salvador",
-		"code": "SLV",
+		"code": "SV",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Equatorial Guinea",
-		"code": "GNQ",
+		"code": "GQ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Eritrea",
-		"code": "ERI",
+		"code": "ER",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Estonia",
-		"code": "EST",
+		"code": "EE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Eswatini",
-		"code": "SWZ",
+		"code": "SZ",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Ethiopia",
-		"code": "ETH",
+		"code": "ET",
 		"calendarYear": false,
 		"fiscalStart": "07/08",
 		"fiscalEnd": "07/07"
 	},
 	{
 		"country": "Faroe Islands",
-		"code": "FRO",
+		"code": "FO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Fiji",
-		"code": "FJI",
+		"code": "FJ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Finland",
-		"code": "FIN",
+		"code": "FI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "France",
-		"code": "FRA",
+		"code": "FR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "French Polynesia",
-		"code": "PYF",
+		"code": "PF",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Gabon",
-		"code": "GAB",
+		"code": "GA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Gambia, The",
-		"code": "GMB",
-		"calendarYear": true,
-		"fiscalStart": null,
-		"fiscalEnd": null
-	},
-	{
-		"country": "Gambia, The",
-		"code": "GMB",
+		"code": "GM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Georgia",
-		"code": "GEO",
+		"code": "GE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Germany",
-		"code": "DEU",
+		"code": "DE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Ghana",
-		"code": "GHA",
+		"code": "GH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Gibraltar",
-		"code": "GIB",
+		"code": "GI",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Greece",
-		"code": "GRC",
+		"code": "GR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Greenland",
-		"code": "GRL",
+		"code": "GL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Grenada",
-		"code": "GRD",
+		"code": "GD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Guam",
-		"code": "GUM",
+		"code": "GU",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Guatemala",
-		"code": "GTM",
+		"code": "GT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Guernsey",
-		"code": "GGY",
+		"code": "GG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Guinea",
-		"code": "GIN",
+		"code": "GN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Guinea - Bissau",
-		"code": "GNB",
+		"code": "GW",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Guyana",
-		"code": "GUY",
+		"code": "GY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Haiti",
-		"code": "HTI",
+		"code": "HT",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Holy See(Vatican City)",
-		"code": "VAT",
+		"code": "VA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Honduras",
-		"code": "HND",
+		"code": "HN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Hong Kong",
-		"code": "HKG",
+		"code": "HK",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Hungary",
-		"code": "HUN",
+		"code": "HU",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Iceland",
-		"code": "ISL",
+		"code": "IS",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "India",
-		"code": "IND",
+		"code": "IN",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Indonesia",
-		"code": "ISL",
+		"code": "ID",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Iran",
-		"code": "IRN",
+		"code": "IR",
 		"calendarYear": false,
 		"fiscalStart": "04/21",
 		"fiscalEnd": "04/20"
 	},
 	{
 		"country": "Iraq",
-		"code": "IRQ",
+		"code": "IQ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Ireland",
-		"code": "IRL",
+		"code": "IE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Isle of Man",
-		"code": "IMN",
+		"code": "IM",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Israel",
-		"code": "ISR",
+		"code": "IL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Italy",
-		"code": "ITA",
+		"code": "IT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Jamaica",
-		"code": "JAM",
+		"code": "JM",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Japan",
-		"code": "JPN",
+		"code": "JP",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Jersey",
-		"code": "JEY",
+		"code": "JE",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Jordan",
-		"code": "JOR",
+		"code": "JO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Kazakhstan",
-		"code": "KAZ",
+		"code": "KZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Kenya",
-		"code": "KEN",
+		"code": "KE",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "North Korea",
-		"code": "PRK",
+		"code": "KP",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "South Korea",
-		"code": "KOR",
+		"code": "KR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Kuwait",
-		"code": "KWT",
+		"code": "KW",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Kyrgyzstan",
-		"code": "KGZ",
+		"code": "KG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Laos",
-		"code": "LAO",
+		"code": "LA",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Latvia",
-		"code": "LVA",
+		"code": "LV",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Lebanon",
-		"code": "LBN",
+		"code": "LB",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Lesotho",
-		"code": "LSO",
+		"code": "LS",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Liberia",
-		"code": "LBR",
+		"code": "LR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Libya",
-		"code": "LBY",
+		"code": "LY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Liechtenstein",
-		"code": "LIE",
+		"code": "LI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Lithuania",
-		"code": "LTU",
+		"code": "LT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Luxembourg",
-		"code": "LUX",
+		"code": "LU",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Macao",
-		"code": "MAC",
+		"code": "MO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Madagascar",
-		"code": "MDG",
+		"code": "MG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Malawi",
-		"code": "MWI",
+		"code": "MW",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Malaysia",
-		"code": "MYS",
+		"code": "MY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Maldives",
-		"code": "MDV",
+		"code": "MV",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Mali",
-		"code": "MLI",
+		"code": "ML",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Malta",
-		"code": "MLT",
+		"code": "MT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Marshall Islands",
-		"code": "MHL",
+		"code": "MH",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Mauritania",
-		"code": "MRT",
+		"code": "MR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Mauritius",
-		"code": "MUS",
+		"code": "MU",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Mexico",
-		"code": "MEX",
+		"code": "MX",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Micronesia",
-		"code": "FSM",
+		"code": "FM",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Moldova",
-		"code": "MDA",
+		"code": "MD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Monaco",
-		"code": "MCO",
+		"code": "MC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Mongolia",
-		"code": "MNG",
+		"code": "MN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Montenegro",
-		"code": "MNE",
+		"code": "ME",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Montserrat",
-		"code": "MSR",
+		"code": "MS",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Morocco",
-		"code": "MAR",
+		"code": "MA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Mozambique",
-		"code": "MOZ",
+		"code": "MZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Namibia",
-		"code": "NAM",
+		"code": "NA",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Nauru",
-		"code": "NRU",
+		"code": "NR",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Nepal",
-		"code": "NPL",
+		"code": "NP",
 		"calendarYear": false,
 		"fiscalStart": "07/16",
 		"fiscalEnd": "07/15"
 	},
 	{
 		"country": "Netherlands",
-		"code": "NLD",
+		"code": "NL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "New Caledonia",
-		"code": "NCL",
+		"code": "NC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "New Zealand",
-		"code": "NZL",
+		"code": "NZ",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Nicaragua",
-		"code": "NIC",
+		"code": "NI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Niger",
-		"code": "NER",
+		"code": "NE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Nigeria",
-		"code": "NGA",
+		"code": "NG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Niue",
-		"code": "NIU",
+		"code": "NU",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Norfolk Island",
-		"code": "NFK",
+		"code": "NF",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Northern Mariana Islands",
-		"code": "MNP",
+		"code": "MP",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Norway",
-		"code": "NOR",
+		"code": "NO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Oman",
-		"code": "OMN",
+		"code": "OM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Pakistan",
-		"code": "PAK",
+		"code": "PK",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Palau",
-		"code": "PLW",
+		"code": "PW",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Panama",
-		"code": "PAN",
+		"code": "PA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Papua New Guinea",
-		"code": "PNG",
+		"code": "PG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Paraguay",
-		"code": "PRY",
+		"code": "PY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Peru",
-		"code": "PER",
+		"code": "PE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Philippines",
-		"code": "PHL",
+		"code": "PH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Pitcairn Islands",
-		"code": "PCN",
+		"code": "PN",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Poland",
-		"code": "POL",
+		"code": "PL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Portugal",
-		"code": "PRT",
+		"code": "PT",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Puerto Rico",
-		"code": "PRI",
+		"code": "PR",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Qatar",
-		"code": "QAT",
+		"code": "QA",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Romania",
-		"code": "ROU",
+		"code": "RO",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Russia",
-		"code": "RUS",
+		"code": "RU",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Rwanda",
-		"code": "RWA",
+		"code": "RW",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Saint Kitts and Nevis",
-		"code": "KNA",
+		"code": "KN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Saint Lucia",
-		"code": "LCA",
+		"code": "LC",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Saint Pierre and Miquelon",
-		"code": "SPM",
+		"code": "PM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Saint Vincent and the Grenadines",
-		"code": "VCT",
+		"code": "VC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Samoa",
-		"code": "WSM",
+		"code": "WS",
 		"calendarYear": true,
 		"fiscalStart": "06/01",
 		"fiscalEnd": "05/31"
 	},
 	{
 		"country": "San Marino",
-		"code": "SMR",
+		"code": "SM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Sao Tome and Principe",
-		"code": "STP",
+		"code": "ST",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Saudi Arabia",
-		"code": "SAU",
+		"code": "SA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Senegal",
-		"code": "SEN",
+		"code": "SN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Seychelles",
-		"code": "SYC",
+		"code": "SC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Sierra Leone",
-		"code": "SLE",
+		"code": "SL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Singapore",
-		"code": "SGP",
+		"code": "SG",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Slovakia",
-		"code": "SVK",
+		"code": "SK",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Slovenia",
-		"code": "SVN",
+		"code": "SI",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Solomon Islands",
-		"code": "SLB",
+		"code": "SB",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "South Africa",
-		"code": "ZAF",
+		"code": "ZA",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Spain",
-		"code": "ESP",
+		"code": "ES",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Sri Lanka",
-		"code": "LKA",
+		"code": "LK",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Sudan",
-		"code": "SDN",
+		"code": "SD",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Suriname",
-		"code": "SUR",
+		"code": "SR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Sweden",
-		"code": "SWE",
+		"code": "SE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Switzerland",
-		"code": "CHE",
+		"code": "CH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Syria",
-		"code": "SYR",
+		"code": "SY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Taiwan",
-		"code": "TWN",
+		"code": "TW",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Tajikistan",
-		"code": "TJK",
+		"code": "TJ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Tanzania",
-		"code": "TZA",
+		"code": "TZ",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Thailand",
-		"code": "THA",
+		"code": "TH",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Timor - Leste",
-		"code": "TLS",
+		"code": "TL",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Togo",
-		"code": "TGO",
+		"code": "TG",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Tokelau",
-		"code": "TKL",
+		"code": "TK",
 		"calendarYear": false,
 		"fiscalStart": "04/01",
 		"fiscalEnd": "03/31"
 	},
 	{
 		"country": "Tonga",
-		"code": "TON",
+		"code": "TO",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Trinidad and Tobago",
-		"code": "TTO",
+		"code": "TT",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Tunisia",
-		"code": "TUN",
+		"code": "TN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Turkey",
-		"code": "TUR",
+		"code": "TR",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Turkmenistan",
-		"code": "TKM",
+		"code": "TM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Turks and Caicos Islands",
-		"code": "TCA",
+		"code": "TC",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Tuvalu",
-		"code": "TUV",
+		"code": "TV",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Uganda",
-		"code": "UGA",
+		"code": "UG",
 		"calendarYear": false,
 		"fiscalStart": "07/01",
 		"fiscalEnd": "06/30"
 	},
 	{
 		"country": "Ukraine",
-		"code": "UKR",
+		"code": "UA",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "United Arab Emirates",
-		"code": "ARE",
+		"code": "AE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "United Kingdom",
-		"code": "GBR",
+		"code": "GB",
 		"calendarYear": false,
 		"fiscalStart": "04/06",
 		"fiscalEnd": "04/05"
 	},
 	{
 		"country": "United States",
-		"code": "USA",
+		"code": "US",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Uruguay",
-		"code": "URY",
+		"code": "UY",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Uzbekistan",
-		"code": "UZB",
+		"code": "UZ",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Vanuatu",
-		"code": "VUT",
+		"code": "VU",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Venezuela",
-		"code": "VEN",
+		"code": "VE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Vietnam",
-		"code": "VNM",
+		"code": "VN",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Virgin Islands",
-		"code": "VIR",
+		"code": "VI",
 		"calendarYear": false,
 		"fiscalStart": "10/01",
 		"fiscalEnd": "09/30"
 	},
 	{
 		"country": "Wallis and Futuna",
-		"code": "WLF",
+		"code": "WF",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Western Sahara",
-		"code": "ESH",
+		"code": "EH",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Yemen",
-		"code": "YEM",
+		"code": "YE",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Zambia",
-		"code": "ZMB",
+		"code": "ZM",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
 	},
 	{
 		"country": "Zimbabwe",
-		"code": "ZWE",
+		"code": "ZW",
 		"calendarYear": true,
 		"fiscalStart": null,
 		"fiscalEnd": null
