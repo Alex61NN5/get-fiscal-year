@@ -1,11 +1,11 @@
 {
-  "name": "get-fiscal-year",
-  "version": "1.0.0",
-  "description": "Easily get the fiscal year of any country",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Alex Ginns",
-  "license": "MIT"
+	"name": "get-fiscal-year",
+	"version": "1.0.0",
+	"description": "Easily get the fiscal year of any country",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Alex Ginns",
+	"license": "MIT"
 }
