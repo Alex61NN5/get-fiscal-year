@@ -1,0 +1,35 @@
+import GetFiscalYear from '../src/get-fiscal-year.js';
+
+describe('#getFiscalYear()', () => {
+	let gfy = new GetFiscalYear();
+
+	test('Should return current fiscal year', () => {
+		expect(gfy.getFiscalYear('AU')).toMatchObject({
+			period: 'current',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
+	});
+
+	test('Should return last fiscal year', () => {
+		expect(gfy.getFiscalYear('AU', 'last')).toMatchObject({
+			period: 'last',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
+	});
+
+	test('Should return next fiscal year', () => {
+		expect(gfy.getFiscalYear('AU', 'next')).toMatchObject({
+			period: 'next',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
+	});
+
+	test('Should return undefined and log error if no country input', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYear()).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: No country provided.');
+	});
+});

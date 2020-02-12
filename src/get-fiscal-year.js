@@ -87,20 +87,20 @@ export default class GetFiscalYear {
 		if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
 			return {
 				period: 'last',
-				fiscalYearStart: `${this.currentDate.getFullYear() - 2}/${this.this._appendLeadingZero(
+				fiscalYearStart: `${this.currentDate.getFullYear() - 2}/${this._appendLeadingZero(
 					breakdown.fs.month
 				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear() - 1}/${this.this._appendLeadingZero(
+				fiscalYearEnd: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
 					breakdown.fe.month
 				)}/${this._appendLeadingZero(breakdown.fe.day)}`
 			};
 		} else {
 			return {
 				period: 'last',
-				fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this.this._appendLeadingZero(
+				fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
 					breakdown.fs.month
 				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear()}/${this.this._appendLeadingZero(
+				fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
 					breakdown.fe.month
 				)}/${this._appendLeadingZero(breakdown.fe.day)}`
 			};
