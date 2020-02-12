@@ -2,10 +2,31 @@
 	"name": "get-fiscal-year",
 	"version": "1.0.0",
 	"description": "Easily get the fiscal year of any country",
-	"main": "index.js",
+	"main": "dist/get-fiscal-year.min.js",
+	"module": "dist/get-fiscal-year.esm.js",
 	"scripts": {
+		"start": "live-server",
+		"prebuild": "rimraf dist",
+		"build": "rollup -c",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Alex Ginns",
-	"license": "MIT"
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Alex61NN5/get-fiscal-year"
+	},
+	"homepage": "https://github.com/Alex61NN5/get-fiscal-year",
+	"bugs": "https://github.com/Alex61NN5/get-fiscal-year/issues",
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"live-server": "^1.2.1",
+		"rimraf": "^3.0.2",
+		"rollup": "^1.31.0",
+		"rollup-plugin-babel": "^4.3.3",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-terser": "^5.2.0"
+	}
 }
