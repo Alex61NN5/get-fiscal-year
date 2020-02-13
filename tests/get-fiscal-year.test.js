@@ -27,9 +27,21 @@ describe('#getFiscalYear()', () => {
 		});
 	});
 
-	test('Should return undefined and log error if no country input', () => {
+	test('Should return undefined and log error if no country input provided', () => {
 		const consoleSpy = jest.spyOn(console, 'error');
 		expect(gfy.getFiscalYear()).toBeUndefined();
 		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: No country provided.');
 	});
+
+	test('Should return undefined and log error if period is incorrect', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYear('AU', 'wrong')).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Time period is not valid.');
+	});
+
+	test('Should return undefined and log error if country was not found', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYear('UK')).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Country is not valid, or was not found.');
+	})
 });
