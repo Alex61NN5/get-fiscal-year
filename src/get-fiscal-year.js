@@ -11,7 +11,7 @@ export default class GetFiscalYear {
 	 * @param {string} message This is the error message displayed to users
 	 */
 	_error(message) {
-		console.error(`GetFiscalYear: ${message}`);
+		message && console.error(`GetFiscalYear: ${message}`);
 	}
 
 	/**
@@ -22,11 +22,30 @@ export default class GetFiscalYear {
 	 */
 	getFiscalYear(country, period = 'current') {
 		if (country) {
-			return this['_' + period + 'FiscalYear'](this._getCountryInfo(country));
+			if (this._checkPeriod(period)) {
+				return this['_' + period + 'FiscalYear'](this._getCountryInfo(country));
+			} else {
+				this._error('Time period is not valid.');
+				return;
+			}
 		} else {
 			this._error('No country provided.');
 			return;
 		}
+	}
+
+	/**
+	 * This checks to see if the period is a correct value
+	 * @param {string} period 
+	 * @result {boolean} 
+	 */
+	_checkPeriod(period) {
+		const validPeriods = {
+			current: true,
+			last: true,
+			next: true
+		}
+		return validPeriods[period] ? true : false;
 	}
 
 	/**
@@ -37,12 +56,25 @@ export default class GetFiscalYear {
 	_getCountryInfo(country) {
 		// check to see if country is a country code
 		if (country.split('').length > 2) {
-			let c = country.toLowerCase();
-			// filter fiscalData by country name and return the value
-			return fiscalData.filter(x => x.country.toLowerCase().includes(c))[0];
+			const c = country.toUpperCase();
+			country = fiscalData.filter(x => x.country.includes(c))[0];
 		} else {
-			// filter fiscalData by the country code and return the value
-			return fiscalData.filter(x => x.code === country)[0];
+			country = fiscalData.filter(x => x.code === country)[0];
+		}
+		return this._checkCountry(country) ? country : undefined;
+	}
+
+	/**
+	 * Checks to see if a valid country was found
+	 * @param {string} country 
+	 * @return {boolean}
+	 */
+	_checkCountry(country) {
+		if (country) {
+			return true;
+		} else {
+			this._error('Country is not valid, or was not found.');
+			return false;
 		}
 	}
 
@@ -83,27 +115,31 @@ export default class GetFiscalYear {
 	 * @returns {object}
 	 */
 	_lastFiscalYear(country) {
-		const breakdown = this._getDateBreakdown(country);
-		if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
-			return {
-				period: 'last',
-				fiscalYearStart: `${this.currentDate.getFullYear() - 2}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+		if (country) {
+			const breakdown = this._getDateBreakdown(country);
+			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
+				return {
+					period: 'last',
+					fiscalYearStart: `${this.currentDate.getFullYear() - 2}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			} else {
+				return {
+					period: 'last',
+					fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			}
 		} else {
-			return {
-				period: 'last',
-				fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+			return;
 		}
 	}
 
@@ -113,27 +149,31 @@ export default class GetFiscalYear {
 	 * @returns {object}
 	 */
 	_currentFiscalYear(country) {
-		const breakdown = this._getDateBreakdown(country);
-		if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
-			return {
-				period: 'current',
-				fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+		if (country) {
+			const breakdown = this._getDateBreakdown(country);
+			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
+				return {
+					period: 'current',
+					fiscalYearStart: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			} else {
+				return {
+					period: 'current',
+					fiscalYearStart: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			}
 		} else {
-			return {
-				period: 'current',
-				fiscalYearStart: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+			return;
 		}
 	}
 
@@ -143,27 +183,31 @@ export default class GetFiscalYear {
 	 * @returns {object}
 	 */
 	_nextFiscalYear(country) {
-		const breakdown = this._getDateBreakdown(country);
-		if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
-			return {
-				period: 'next',
-				fiscalYearStart: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+		if (country) {
+			const breakdown = this._getDateBreakdown(country);
+			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
+				return {
+					period: 'next',
+					fiscalYearStart: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			} else {
+				return {
+					period: 'next',
+					fiscalYearStart: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
+						breakdown.fs.month
+					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
+					fiscalYearEnd: `${this.currentDate.getFullYear() + 2}/${this._appendLeadingZero(
+						breakdown.fe.month
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+				};
+			}
 		} else {
-			return {
-				period: 'next',
-				fiscalYearStart: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
-					breakdown.fs.month
-				)}/${this._appendLeadingZero(breakdown.fs.day)}`,
-				fiscalYearEnd: `${this.currentDate.getFullYear() + 2}/${this._appendLeadingZero(
-					breakdown.fe.month
-				)}/${this._appendLeadingZero(breakdown.fe.day)}`
-			};
+			return;
 		}
 	}
 }
