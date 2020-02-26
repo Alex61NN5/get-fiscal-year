@@ -39,7 +39,11 @@ If you are using a module loader you will need to import the module
 
 ```js
 import GetFiscalYear from 'get-fiscal-year';
+```
 
+## By Country
+
+```js
 const gfy = new GetFiscalYear();
 
 gfy.getFiscalYear('AU');
@@ -47,7 +51,7 @@ gfy.getFiscalYear('AU');
 
 ### Input
 
-The method has one mandatory argument and one optional
+The `getFiscalYear` method has one mandatory argument and one optional
 
 First argument is the country - this can be a country code or the full name of a country
 `'AU'` or `'Australia'`
@@ -72,12 +76,63 @@ gfy.getFiscalYear('GB', 'last');
 /**
  * {
  *  period: 'last',
+ *  fiscalStart: '2018/07/06',
+ *	fiscalEnd: '2019/06/05'
+ * }
+ */
+
+gfy.getFiscalYear('US', 'next');
+/**
+ * {
+ *  period: 'next',
+ *  fiscalStart: '2021/10/01',
+ *	fiscalEnd: '2022/09/30'
+ * }
+ */
+```
+
+## By Date
+
+```js
+import GetFiscalYear from 'get-fiscal-year';
+
+const gfy = new GetFiscalYear();
+
+gfy.getFiscalYearByDate('06/30');
+```
+
+### Input
+
+The `getFiscalYearByDate` method has one mandatory argument and one optional
+
+First argument is the date - it must follow this format `<month>/<day>`
+
+Second argument is the time period - You can pass in `'current'`, `'last'`, `'next'`
+
+### Output
+
+Examples:
+
+```js
+gfy.getFiscalYear('06/30');
+/**
+ * {
+ *  period: 'current',
+ *  fiscalStart: '2019/07/01',
+		fiscalEnd: '2020/06/30'
+ * }
+ */
+
+gfy.getFiscalYear('04/05', 'last');
+/**
+ * {
+ *  period: 'last',
  *  fiscalStart: '2018/04/06',
  *	fiscalEnd: '2019/04/05'
  * }
  */
 
-gfy.getFiscalYear('US', 'next');
+gfy.getFiscalYear('09/30', 'next');
 /**
  * {
  *  period: 'next',

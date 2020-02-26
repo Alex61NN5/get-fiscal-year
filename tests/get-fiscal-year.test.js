@@ -43,5 +43,51 @@ describe('#getFiscalYear()', () => {
 		const consoleSpy = jest.spyOn(console, 'error');
 		expect(gfy.getFiscalYear('UK')).toBeUndefined();
 		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Country is not valid, or was not found.');
-	})
+	});
+});
+
+describe('#getFiscalYearByDate()', () => {
+	let gfy = new GetFiscalYear();
+
+	test('Should return current fiscal year', () => {
+		expect(gfy.getFiscalYearByDate('06/30')).toMatchObject({
+			period: 'current',
+			fiscalYearStart: expect.stringContaining('07/01'),
+			fiscalYearEnd: expect.stringContaining('06/30')
+		});
+	});
+
+	test('Should return last fiscal year', () => {
+		expect(gfy.getFiscalYearByDate('06/30', 'last')).toMatchObject({
+			period: 'last',
+			fiscalYearStart: expect.stringContaining('07/01'),
+			fiscalYearEnd: expect.stringContaining('06/30')
+		});
+	});
+
+	test('Should return next fiscal year', () => {
+		expect(gfy.getFiscalYearByDate('06/30', 'next')).toMatchObject({
+			period: 'next',
+			fiscalYearStart: expect.stringContaining('07/01'),
+			fiscalYearEnd: expect.stringContaining('06/30')
+		});
+	});
+
+	test('Should return undefined and log error if no date input provided', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYearByDate()).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Date is invalid.');
+	});
+
+	test('Should return undefined and log error if period is incorrect', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYearByDate('06/30', 'wrong')).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Time period is not valid.');
+	});
+
+	test('Should return undefined and log error if date format is not valid', () => {
+		const consoleSpy = jest.spyOn(console, 'error');
+		expect(gfy.getFiscalYearByDate('111/111')).toBeUndefined();
+		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Date is invalid.');
+	});
 });

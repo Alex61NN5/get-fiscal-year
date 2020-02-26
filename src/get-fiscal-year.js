@@ -23,7 +23,7 @@ export default class GetFiscalYear {
 	getFiscalYear(country, period = 'current') {
 		if (country) {
 			if (this._checkPeriod(period)) {
-				return this['_' + period + 'FiscalYear'](this._getCountryInfo(country));
+				return this['_' + period + 'FiscalYear'](this._getCountryInfo(country), null);
 			} else {
 				this._error('Time period is not valid.');
 				return;
@@ -35,16 +35,53 @@ export default class GetFiscalYear {
 	}
 
 	/**
+	 * This takes the end date and the period and returns
+	 * @param {string} country This is the country the user would like fiscal year data on
+	 * @param {string} period This is the fiscal year time period valid options are 'last', 'next', 'current'
+	 * @result The fiscal year data
+	 */
+	getFiscalYearByDate(date, period = 'current') {
+		if (date && this._checkDate(date)) {
+			if (this._checkPeriod(period)) {
+				return this['_' + period + 'FiscalYear'](null, date);
+			} else {
+				this._error('Time period is not valid.');
+				return;
+			}
+		} else {
+			this._error('Date is invalid.');
+			return;
+		}
+	}
+
+	/**
+	 * This checks to see if the date passed in is valid
+	 * @param {any} date
+	 */
+	_checkDate(date) {
+		const regex = /^([0-9]{2}\/[0-9]{2})$/;
+		// Check to see if date format is valid
+		if (regex.test(date)) {
+			const month = date.split('/')[0];
+			const day = date.split('/')[1];
+			// check to see if month and day set is valid
+			return month <= 12 && day <= 31 ? true : false;
+		} else {
+			return false;
+		}
+	}
+
+	/**
 	 * This checks to see if the period is a correct value
-	 * @param {string} period 
-	 * @result {boolean} 
+	 * @param {string} period
+	 * @result {boolean}
 	 */
 	_checkPeriod(period) {
 		const validPeriods = {
 			current: true,
 			last: true,
 			next: true
-		}
+		};
 		return validPeriods[period] ? true : false;
 	}
 
@@ -66,7 +103,7 @@ export default class GetFiscalYear {
 
 	/**
 	 * Checks to see if a valid country was found
-	 * @param {string} country 
+	 * @param {string} country
 	 * @return {boolean}
 	 */
 	_checkCountry(country) {
@@ -96,7 +133,7 @@ export default class GetFiscalYear {
 	 * @param {string} country The country from the fiscalData
 	 * @returns {object}
 	 */
-	_getDateBreakdown(country) {
+	_getDateBreakdownByCountry(country) {
 		return {
 			fs: {
 				month: Number(country.fiscalStart.split('/')[0]),
@@ -110,13 +147,33 @@ export default class GetFiscalYear {
 	}
 
 	/**
+	 * This returns the date breakdown as a usable object
+	 * @param {string} date The date from user input
+	 * @returns {object}
+	 */
+	_getDateBreakdownByDate(date) {
+		const end = new Date(this.currentDate.getFullYear() + '/' + date);
+		const start = new Date(new Date(this.currentDate.getFullYear() + '/' + date).setDate(end.getDate() + 1));
+		return {
+			fs: {
+				month: Number(start.getMonth() + 1),
+				day: Number(start.getDate())
+			},
+			fe: {
+				month: Number(date.split('/')[0]),
+				day: Number(date.split('/')[1])
+			}
+		};
+	}
+
+	/**
 	 * Returns last fiscal year data
 	 * @param {string} country from the fiscalData
 	 * @returns {object}
 	 */
-	_lastFiscalYear(country) {
-		if (country) {
-			const breakdown = this._getDateBreakdown(country);
+	_lastFiscalYear(country, date) {
+		if (country || date) {
+			const breakdown = country ? this._getDateBreakdownByCountry(country) : this._getDateBreakdownByDate(date);
 			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
 				return {
 					period: 'last',
@@ -148,9 +205,9 @@ export default class GetFiscalYear {
 	 * @param {string} country from the fiscalData
 	 * @returns {object}
 	 */
-	_currentFiscalYear(country) {
-		if (country) {
-			const breakdown = this._getDateBreakdown(country);
+	_currentFiscalYear(country, date) {
+		if (country || date) {
+			const breakdown = country ? this._getDateBreakdownByCountry(country) : this._getDateBreakdownByDate(date);
 			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
 				return {
 					period: 'current',
@@ -182,9 +239,9 @@ export default class GetFiscalYear {
 	 * @param {string} country from the fiscalData
 	 * @returns {object}
 	 */
-	_nextFiscalYear(country) {
-		if (country) {
-			const breakdown = this._getDateBreakdown(country);
+	_nextFiscalYear(country, date) {
+		if (country || date) {
+			const breakdown = country ? this._getDateBreakdownByCountry(country) : this._getDateBreakdownByDate(date);
 			if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
 				return {
 					period: 'next',
