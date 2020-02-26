@@ -1,6 +1,6 @@
 {
 	"name": "get-fiscal-year",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Easily get the fiscal year of any country",
 	"main": "dist/get-fiscal-year.min.js",
 	"module": "dist/get-fiscal-year.esm.js",
