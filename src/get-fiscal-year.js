@@ -110,7 +110,9 @@ export default class GetFiscalYear {
 		if (country) {
 			return true;
 		} else {
-			this._error('Country is not valid, or was not found.');
+			this._error(
+				'Country is not valid, or was not found. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues'
+			);
 			return false;
 		}
 	}

@@ -42,7 +42,9 @@ describe('#getFiscalYear()', () => {
 	test('Should return undefined and log error if country was not found', () => {
 		const consoleSpy = jest.spyOn(console, 'error');
 		expect(gfy.getFiscalYear('UK')).toBeUndefined();
-		expect(consoleSpy).toHaveBeenCalledWith('GetFiscalYear: Country is not valid, or was not found.');
+		expect(consoleSpy).toHaveBeenCalledWith(
+			'GetFiscalYear: Country is not valid, or was not found. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues'
+		);
 	});
 });
 
