@@ -92,11 +92,11 @@ export default class GetFiscalYear {
 	 */
 	_getCountryInfo(country) {
 		// check to see if country is a country code
+		const c = country.toUpperCase();
 		if (country.split('').length > 2) {
-			const c = country.toUpperCase();
-			country = fiscalData.filter(x => x.country.includes(c))[0];
+			country = fiscalData.filter(x => x.country.toUpperCase().includes(c))[0];
 		} else {
-			country = fiscalData.filter(x => x.code === country)[0];
+			country = fiscalData.filter(x => x.code === c)[0];
 		}
 		return this._checkCountry(country) ? country : undefined;
 	}
@@ -111,7 +111,7 @@ export default class GetFiscalYear {
 			return true;
 		} else {
 			this._error(
-				'Country is not valid, or was not found. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues'
+				'Country is not valid, or was not found. If you are using a country\'s full name, try using the country\'s ISO code. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues'
 			);
 			return false;
 		}

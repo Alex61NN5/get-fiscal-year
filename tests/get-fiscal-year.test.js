@@ -9,10 +9,20 @@ describe('#getFiscalYear()', () => {
 			fiscalYearStart: expect.any(String),
 			fiscalYearEnd: expect.any(String)
 		});
+		expect(gfy.getFiscalYear('Australia')).toMatchObject({
+			period: 'current',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
 	});
 
 	test('Should return last fiscal year', () => {
-		expect(gfy.getFiscalYear('AU', 'last')).toMatchObject({
+		expect(gfy.getFiscalYear('GB', 'last')).toMatchObject({
+			period: 'last',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
+		expect(gfy.getFiscalYear('United Kingdom', 'last')).toMatchObject({
 			period: 'last',
 			fiscalYearStart: expect.any(String),
 			fiscalYearEnd: expect.any(String)
@@ -20,7 +30,12 @@ describe('#getFiscalYear()', () => {
 	});
 
 	test('Should return next fiscal year', () => {
-		expect(gfy.getFiscalYear('AU', 'next')).toMatchObject({
+		expect(gfy.getFiscalYear('US', 'next')).toMatchObject({
+			period: 'next',
+			fiscalYearStart: expect.any(String),
+			fiscalYearEnd: expect.any(String)
+		});
+		expect(gfy.getFiscalYear('United States', 'next')).toMatchObject({
 			period: 'next',
 			fiscalYearStart: expect.any(String),
 			fiscalYearEnd: expect.any(String)
