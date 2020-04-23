@@ -41,6 +41,7 @@ export default class GetFiscalYear {
 	 * @result The fiscal year data
 	 */
 	getFiscalYearByDate(date, period = 'current') {
+		date = this._checkLeadingZero(date);
 		if (date && this._checkDate(date)) {
 			if (this._checkPeriod(period)) {
 				return this['_' + period + 'FiscalYear'](null, date);
@@ -71,6 +72,18 @@ export default class GetFiscalYear {
 		}
 	}
 
+	_checkLeadingZero(date) {
+		const regex = /^([0-9]{1}\/[0-9]{2})$/;
+		// Check to see if the date is missing a leading zero
+		if (regex.test(date)) {
+			// if it is add the leading zero
+			return `0${date}`;
+		} else {
+			// if not return date
+			return date;
+		}
+	}
+
 	/**
 	 * This checks to see if the period is a correct value
 	 * @param {string} period
@@ -80,7 +93,7 @@ export default class GetFiscalYear {
 		const validPeriods = {
 			current: true,
 			last: true,
-			next: true
+			next: true,
 		};
 		return validPeriods[period] ? true : false;
 	}
@@ -94,9 +107,9 @@ export default class GetFiscalYear {
 		// check to see if country is a country code
 		const c = country.toUpperCase();
 		if (country.split('').length > 2) {
-			country = fiscalData.filter(x => x.country.toUpperCase().includes(c))[0];
+			country = fiscalData.filter((x) => x.country.toUpperCase().includes(c))[0];
 		} else {
-			country = fiscalData.filter(x => x.code === c)[0];
+			country = fiscalData.filter((x) => x.code === c)[0];
 		}
 		return this._checkCountry(country) ? country : undefined;
 	}
@@ -111,7 +124,7 @@ export default class GetFiscalYear {
 			return true;
 		} else {
 			this._error(
-				'Country is not valid, or was not found. If you are using a country\'s full name, try using the country\'s ISO code. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues'
+				"Country is not valid, or was not found. If you are using a country's full name, try using the country's ISO code. If you believe this to be a mistake, create an issue https://github.com/Alex61NN5/get-fiscal-year/issues"
 			);
 			return false;
 		}
@@ -139,12 +152,12 @@ export default class GetFiscalYear {
 		return {
 			fs: {
 				month: Number(country.fiscalStart.split('/')[0]),
-				day: Number(country.fiscalStart.split('/')[1])
+				day: Number(country.fiscalStart.split('/')[1]),
 			},
 			fe: {
 				month: Number(country.fiscalEnd.split('/')[0]),
-				day: Number(country.fiscalEnd.split('/')[1])
-			}
+				day: Number(country.fiscalEnd.split('/')[1]),
+			},
 		};
 	}
 
@@ -159,12 +172,12 @@ export default class GetFiscalYear {
 		return {
 			fs: {
 				month: Number(start.getMonth() + 1),
-				day: Number(start.getDate())
+				day: Number(start.getDate()),
 			},
 			fe: {
 				month: Number(date.split('/')[0]),
-				day: Number(date.split('/')[1])
-			}
+				day: Number(date.split('/')[1]),
+			},
 		};
 	}
 
@@ -184,7 +197,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear() - 1}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			} else {
 				return {
@@ -194,7 +207,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			}
 		} else {
@@ -218,7 +231,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear()}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			} else {
 				return {
@@ -228,7 +241,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			}
 		} else {
@@ -252,7 +265,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear() + 1}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			} else {
 				return {
@@ -262,7 +275,7 @@ export default class GetFiscalYear {
 					)}/${this._appendLeadingZero(breakdown.fs.day)}`,
 					fiscalYearEnd: `${this.currentDate.getFullYear() + 2}/${this._appendLeadingZero(
 						breakdown.fe.month
-					)}/${this._appendLeadingZero(breakdown.fe.day)}`
+					)}/${this._appendLeadingZero(breakdown.fe.day)}`,
 				};
 			}
 		} else {
