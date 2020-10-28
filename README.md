@@ -11,6 +11,7 @@
 - Get the fiscal year information of any country!
 - 20kb minified / 3.2kb minified + gzipped!
 - No dependencies!
+- Built with Typescript!
 - Easy to use and you can use anywhere! 💪
 
 ## Install 🔮
@@ -38,7 +39,7 @@ $ yarn add get-fiscal-year
 If you are using a module loader you will need to import the module
 
 ```js
-import GetFiscalYear from 'get-fiscal-year';
+import GetFiscalYear from "get-fiscal-year";
 ```
 
 ## By Country
@@ -46,7 +47,7 @@ import GetFiscalYear from 'get-fiscal-year';
 ```js
 const gfy = new GetFiscalYear();
 
-gfy.getFiscalYear('AU');
+gfy.getFiscalYear("AU");
 ```
 
 ### Input
@@ -63,30 +64,30 @@ Second argument is the time period - You can pass in `'current'`, `'last'`, `'ne
 Examples:
 
 ```js
-gfy.getFiscalYear('AU');
+gfy.getFiscalYear("AU");
 /**
  * {
  *  period: 'current',
- *  fiscalStart: '2019/07/01',
- *  fiscalEnd: '2020/06/30'
+ *  fiscalYearStart: '2020-06-30T14:00:00.000Z',
+ *  fiscalYearEnd: '2021-06-29T14:00:00.000Z'
  * }
  */
 
-gfy.getFiscalYear('GB', 'last');
+gfy.getFiscalYear("GB", "last");
 /**
  * {
  *  period: 'last',
- *  fiscalStart: '2018/07/06',
- *  fiscalEnd: '2019/06/05'
+ *  fiscalYearStart: '2019-04-05T13:00:00.000Z',
+ *  fiscalYearEnd: '2020-04-04T13:00:00.000Z'
  * }
  */
 
-gfy.getFiscalYear('US', 'next');
+gfy.getFiscalYear("US", "next");
 /**
  * {
  *  period: 'next',
- *  fiscalStart: '2021/10/01',
- *  fiscalEnd: '2022/09/30'
+ *  fiscalYearStart: '2021-09-30T14:00:00.000Z',
+ *  fiscalYearEnd: '2022-09-29T14:00:00.000Z'
  * }
  */
 ```
@@ -94,11 +95,11 @@ gfy.getFiscalYear('US', 'next');
 ## By Date
 
 ```js
-import GetFiscalYear from 'get-fiscal-year';
+import GetFiscalYear from "get-fiscal-year";
 
 const gfy = new GetFiscalYear();
 
-gfy.getFiscalYearByDate('06/30');
+gfy.getFiscalYearByDate("06/30");
 ```
 
 ### Input
@@ -114,30 +115,30 @@ Second argument is the time period - You can pass in `'current'`, `'last'`, `'ne
 Examples:
 
 ```js
-gfy.getFiscalYear('06/30');
+gfy.getFiscalYearByDate("06/30");
 /**
  * {
  *  period: 'current',
- *  fiscalStart: '2019/07/01',
- *  fiscalEnd: '2020/06/30'
+ *  fiscalYearStart: '2020-06-30T14:00:00.000Z',
+ *  fiscalYearEnd: '2021-06-29T14:00:00.000Z'
  * }
  */
 
-gfy.getFiscalYear('04/05', 'last');
+gfy.getFiscalYearByDate("04/05", "last");
 /**
  * {
  *  period: 'last',
- *  fiscalStart: '2018/04/06',
- *  fiscalEnd: '2019/04/05'
+ *  fiscalYearStart: '2019-04-05T13:00:00.000Z',
+ *  fiscalYearEnd: '2020-04-04T13:00:00.000Z'
  * }
  */
 
-gfy.getFiscalYear('09/30', 'next');
+gfy.getFiscalYearByDate("09/30", "next");
 /**
  * {
  *  period: 'next',
- *  fiscalStart: '2021/10/01',
- *  fiscalEnd: '2022/09/30'
+ *  fiscalYearStart: '2021-09-30T14:00:00.000Z',
+ *  fiscalYearEnd: '2022-09-29T14:00:00.000Z'
  * }
  */
 ```
