@@ -1,13 +1,10 @@
 {
   "name": "get-fiscal-year",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Easily get the fiscal year of any country",
   "main": "dist/get-fiscal-year.min.js",
   "module": "dist/get-fiscal-year.esm.js",
-  "typings": "dist/get-fiscal-year.d.ts",
-  "typescript": {
-    "definition": "dist/get-fiscal-year.d.ts"
-  },
+  "types": "dist/get-fiscal-year.d.ts",
   "scripts": {
     "start": "live-server",
     "prebuild": "rimraf dist",

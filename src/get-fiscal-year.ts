@@ -195,30 +195,30 @@ export default class GetFiscalYear {
       if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
         return {
           period: "last",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear() - 2}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear() - 1}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear() - 2
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear() - 1
+          ),
         };
       } else {
         return {
           period: "last",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear() - 1}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear()}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear() - 1
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear()
+          ),
         };
       }
     } else {
@@ -237,30 +237,30 @@ export default class GetFiscalYear {
       if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
         return {
           period: "current",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear() - 1}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear()}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear() - 1
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear()
+          ),
         };
       } else {
         return {
           period: "current",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear()}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear() + 1}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear()
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear() + 1
+          ),
         };
       }
     } else {
@@ -279,34 +279,49 @@ export default class GetFiscalYear {
       if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
         return {
           period: "next",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear()}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear() + 1}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear()
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear() + 1
+          ),
         };
       } else {
         return {
           period: "next",
-          fiscalYearStart: new Date(
-            `${this.currentDate.getFullYear() + 1}/${this.appendLeadingZero(
-              breakdown.fs.month
-            )}/${this.appendLeadingZero(breakdown.fs.day)}`
-          ).toISOString(),
-          fiscalYearEnd: new Date(
-            `${this.currentDate.getFullYear() + 2}/${this.appendLeadingZero(
-              breakdown.fe.month
-            )}/${this.appendLeadingZero(breakdown.fe.day)}`
-          ).toISOString(),
+          fiscalYearStart: this.createISODateString(
+            "fs",
+            breakdown,
+            this.currentDate.getFullYear() + 1
+          ),
+          fiscalYearEnd: this.createISODateString(
+            "fe",
+            breakdown,
+            this.currentDate.getFullYear() + 2
+          ),
         };
       }
     } else {
       return;
     }
+  }
+
+  /**
+   * Creates the date ISO String
+   */
+  private createISODateString(
+    period: "fs" | "fe",
+    breakdown: DateBreakdown,
+    year: number
+  ): string {
+    return new Date(
+      `${year}/${this.appendLeadingZero(
+        breakdown[period].month
+      )}/${this.appendLeadingZero(breakdown[period].day)}`
+    ).toISOString();
   }
 }
