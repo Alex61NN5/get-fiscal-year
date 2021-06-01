@@ -2,7 +2,6 @@
 
 ![npm version](https://img.shields.io/npm/v/get-fiscal-year.svg)
 ![bundlephobia](https://img.shields.io/bundlephobia/min/get-fiscal-year.svg)
-![twitter](https://img.shields.io/twitter/follow/alexginns.svg?style=social)
 
 > Easily get the fiscal year for any country - Get the Last Fiscal Year, Current Fiscal Year and Next Fiscal Year
 
@@ -146,5 +145,3 @@ gfy.getFiscalYearByDate("09/30", "next");
 ## Support 💬
 
 - 🐞 For Bug Reports, Wrong Fiscal Data and Enhancements please use the [issues section](https://github.com/Alex61NN5/get-fiscal-year/issues)
-
-- 🕊️ To contact me directly you can find me via my [twitter](https://twitter.com/alexginns)
