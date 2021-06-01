@@ -235,8 +235,8 @@ export default class GetFiscalYear {
         ? this.getDateBreakdownByCountry(country)
         : this.getDateBreakdownByDate(date);
       if (
-        this.currentDate.getMonth() + 1 < breakdown.fe.month &&
-        this.currentDate.getDay() + 1 < breakdown.fe.day
+        this.currentDate.getMonth() + 1 <= breakdown.fe.month &&
+        this.currentDate.getDate() <= breakdown.fe.day
       ) {
         return {
           period: "current",
