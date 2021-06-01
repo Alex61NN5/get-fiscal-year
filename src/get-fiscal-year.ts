@@ -192,7 +192,10 @@ export default class GetFiscalYear {
       const breakdown = country
         ? this.getDateBreakdownByCountry(country)
         : this.getDateBreakdownByDate(date);
-      if (this.currentDate.getMonth() + 1 < breakdown.fe.month) {
+      if (
+        this.currentDate.getMonth() + 1 <= breakdown.fe.month &&
+        this.currentDate.getDate() <= breakdown.fe.day
+      ) {
         return {
           period: "last",
           fiscalYearStart: this.createISODateString(
