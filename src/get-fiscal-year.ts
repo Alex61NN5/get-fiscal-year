@@ -166,7 +166,6 @@ export default class GetFiscalYear {
    * This returns the date breakdown as a usable object
    */
   private getDateBreakdownByDate(date: string): DateBreakdown {
-    console.log("getDateBreakdownByDate", date);
     const end = new Date(this.currentDate.getFullYear(), Number(date.split("/")[0]) -1, Number(date.split("/")[1]));
     const start = new Date(
       new Date(this.currentDate.getFullYear(), Number(date.split("/")[0]) -1, Number(date.split("/")[1])).setDate(
