@@ -166,9 +166,9 @@ export default class GetFiscalYear {
    * This returns the date breakdown as a usable object
    */
   private getDateBreakdownByDate(date: string): DateBreakdown {
-    const end = new Date(this.currentDate.getFullYear() + "/" + date);
+    const end = new Date(this.currentDate.getFullYear(), Number(date.split("/")[0]) -1, Number(date.split("/")[1]));
     const start = new Date(
-      new Date(this.currentDate.getFullYear() + "/" + date).setDate(
+      new Date(this.currentDate.getFullYear(), Number(date.split("/")[0]) -1, Number(date.split("/")[1])).setDate(
         end.getDate() + 1
       )
     );
@@ -328,9 +328,9 @@ export default class GetFiscalYear {
     year: number
   ): string {
     return new Date(
-      `${year}/${this.appendLeadingZero(
-        breakdown[period].month
-      )}/${this.appendLeadingZero(breakdown[period].day)}`
+      year,
+      breakdown[period].month -1,
+      breakdown[period].day
     ).toISOString();
   }
 }
